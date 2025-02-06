@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.trip.app</groupId>
+  <artifactId>Brushthequestion</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Brushthequestion</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+
+    <module>BQ-common</module>
+    <module>BQ-bussiness</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.rease>1.8</maven.compiler.rease>
+    <spring-boot-version>2.6.13</spring-boot-version>
+    <spring-cloud-version>2021.0.5</spring-cloud-version>
+    <spring-cloud-alibaba-version>2021.0.5.0</spring-cloud-alibaba-version>
+  </properties>
+
+
+  <dependencyManagement>
+    <dependencies>
+    <!-- spring boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>${spring-boot-version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+    <!-- spring cloud -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-dependencies</artifactId>
+      <version>${spring-cloud-version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+    <!-- spring cloud alibaba -->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+      <version>${spring-cloud-alibaba-version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba.fastjson2</groupId>
+      <artifactId>fastjson2</artifactId>
+      <version>2.0.43</version>
+    </dependency>
+
+    <!-- nacos注册中心 -->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+    </dependency>
+
+
+<!--    <dependency>-->
+<!--      <groupId>com.cyzy</groupId>-->
+<!--      <artifactId>jd-common</artifactId>-->
+<!--      <version>1.0-SNAPSHOT</version>-->
+<!--    </dependency>-->
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <!--      <version>2.5.15</version>-->
+    </dependency>
+  </dependencies>
+
+  <build>
+
+  </build>
+</project>
