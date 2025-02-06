@@ -13,6 +13,7 @@
 
     <module>BQ-common</module>
     <module>BQ-bussiness</module>
+    <module>BQ-gateway</module>
   </modules>
 
   <properties>
