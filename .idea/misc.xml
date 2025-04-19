@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Data" />
+    </list>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -11,6 +15,8 @@
         <option value="$PROJECT_DIR$/question-front/question-business/pom.xml" />
         <option value="$PROJECT_DIR$/question-front/question-business/question-user/pom.xml" />
         <option value="$PROJECT_DIR$/question-front/question-business/question-text/pom.xml" />
+        <option value="$PROJECT_DIR$/BQ-bussiness/BQ-user/pom.xml" />
+        <option value="$PROJECT_DIR$/BQ-bussiness/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

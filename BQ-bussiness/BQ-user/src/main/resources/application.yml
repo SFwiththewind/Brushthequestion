@@ -1,52 +1,44 @@
 server:
   port: 8001
+  host: http://localhost:8001
+
 spring:
   application:
     name: BQ-user
-
   cloud:
     nacos:
       discovery:
-        server-addr: localhost
+        server-addr: host.docker.internal:8848  # 指向 Windows 宿主机的 Nacos
         username: nacos
         password: nacos
         group: DEFAULT_GROUP
-
   datasource:
-    url: jdbc:mysql://localhost:3306/brushthequestion?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://bq-mysql:3306/brushthequestion?useSSL=false&serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-#  redis:
-#    host: localhost
-#    port: 6379
-#    database: 0
-#    jedis:
-#      pool:
-#        max-active: 8
-#        max-idle: 8
-#        min-idle: 8
-#        max-wait: 1ms
-
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
-    # 打印 SQL 日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    global-config:
-      db-config:
-        # 主键类型：AUTO 自增，INPUT 手动输入，ID_WORKER 雪花算法，UUID UUID
-        id-type: auto
-        # 逻辑删除字段（默认 deleted）
-        logic-delete-field: deleted
-        # 逻辑删除值（默认 1 表示已删除）
-        logic-delete-value: 1
-        # 逻辑未删除值（默认 0 表示未删除）
-        logic-not-delete-value: 0
-    # 指定 Mapper XML 文件路径（如果没有 XML 文件，可以忽略）
-    mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath:mapper/*.xml
 
+wechat:
+  appid: wxf7184a00800f20b8
+  secret: 2c7cc10fc9ce6217acaa8c9a2179d273
 
+file:
+  storage:
+    local-path: /app/uploads
+    access-path: /uploads/**
 
-
+jwt:
+  secret: "U3VwZXJTZWNyZXRLZXkhQDEyMzQ1Njc4OTA="
+  expiration: 86400000

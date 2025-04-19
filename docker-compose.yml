@@ -1,0 +1,58 @@
+services:
+  bq-user:
+    image: bq-user:1.0-SNAPSHOT
+    build:
+      context: ./BQ-bussiness/BQ-user
+      dockerfile: Dockerfile
+    container_name: bq-user
+    ports:
+      - "8001:8001"
+    environment:
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=192.168.10.215:8848
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/brushthequestion?useSSL=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
+
+  bq-file:
+    image: bq-file:1.0-SNAPSHOT
+    build:
+      context: ./BQ-bussiness/BQ-file
+      dockerfile: Dockerfile
+    container_name: bq-file
+    ports:
+      - "8003:8003"
+    depends_on:
+      - bq-user
+    environment:
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=192.168.10.215:8848
+      - FILE_STORAGE_LOCAL-PATH=/app/uploads
+    volumes:
+      - ./uploads:/app/uploads
+
+  bq-question:
+    image: bq-question:1.0-SNAPSHOT
+    build:
+      context: ./BQ-bussiness/BQ-question
+      dockerfile: Dockerfile
+    container_name: bq-question
+    ports:
+      - "8004:8004"
+    depends_on:
+      - bq-user
+    environment:
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=192.168.10.215:8848
+
+  bq-gateway:
+    image: bq-gateway:1.0-SNAPSHOT
+    build:
+      context: ./BQ-gateway
+      dockerfile: Dockerfile
+    container_name: bq-gateway
+    ports:
+      - "8002:8002"
+    depends_on:
+      - bq-user
+      - bq-file
+      - bq-question
+    environment:
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=192.168.10.215:8848

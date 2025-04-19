@@ -1,0 +1,43 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: BQ-file
+  cloud:
+    nacos:
+      discovery:
+        server-addr: host.docker.internal:8848
+        username: nacos
+        password: nacos
+        group: DEFAULT_GROUP
+  datasource:
+    url: jdbc:mysql://bq-mysql:3306/brushthequestion?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath:mapper/*.xml
+
+file:
+  storage:
+    local-path: /app/uploads
+    access-path: /uploads/**
+
+jwt:
+  secret: "U3VwZXJTZWNyZXRLZXkhQDEyMzQ1Njc4OTA="
+  expiration: 86400000
+
+wechat:
+  appid: wxf7184a00800f20b8
+  secret: 2c7cc10fc9ce6217acaa8c9a2179d273

@@ -1,0 +1,234 @@
+2025-04-10 09:23:09,890 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-10 09:23:09,890 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-10 09:23:09,890 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-10 09:23:09,890 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-10 09:23:10,499 INFO Load instance extension handler []
+
+2025-04-10 09:24:14,304 INFO Client connection 1744248254151_172.18.0.4_34564 connect
+
+2025-04-10 09:24:14,437 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=0}, 1744248254151_172.18.0.4_34564
+
+2025-04-10 09:24:28,708 INFO Client connection 1744248268613_172.18.0.5_47704 connect
+
+2025-04-10 09:24:28,825 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744248268613_172.18.0.5_47704
+
+2025-04-10 09:24:46,476 INFO Client connection 1744248286382_172.18.0.6_54370 connect
+
+2025-04-10 09:24:46,596 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=0}, 1744248286382_172.18.0.6_54370
+
+2025-04-10 09:25:06,625 INFO Client connection 1744248306517_172.18.0.7_46650 connect
+
+2025-04-10 09:25:06,751 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744248306517_172.18.0.7_46650
+
+2025-04-10 10:10:14,119 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, 1744248254151_172.18.0.4_34564
+
+2025-04-10 10:10:14,204 INFO Client connection 1744248254151_172.18.0.4_34564 disconnect, remove instances and subscribers
+
+2025-04-10 10:10:23,110 INFO Client connection 1744251023011_172.18.0.4_57438 connect
+
+2025-04-10 10:10:23,227 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=2}, 1744251023011_172.18.0.4_57438
+
+2025-04-10 11:27:03,800 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744248306517_172.18.0.7_46650
+
+2025-04-10 11:27:03,878 INFO Client connection 1744248306517_172.18.0.7_46650 disconnect, remove instances and subscribers
+
+2025-04-10 11:27:12,645 INFO Client connection 1744255632554_172.18.0.7_48852 connect
+
+2025-04-10 11:27:12,758 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=2}, 1744255632554_172.18.0.7_48852
+
+2025-04-10 11:31:25,844 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744248268613_172.18.0.5_47704
+
+2025-04-10 11:31:25,875 INFO Client connection 1744248268613_172.18.0.5_47704 disconnect, remove instances and subscribers
+
+2025-04-10 11:31:28,743 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=3}, 1744251023011_172.18.0.4_57438
+
+2025-04-10 11:31:28,799 INFO Client connection 1744251023011_172.18.0.4_57438 disconnect, remove instances and subscribers
+
+2025-04-10 11:31:28,853 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, 1744248286382_172.18.0.6_54370
+
+2025-04-10 11:31:28,909 INFO Client connection 1744248286382_172.18.0.6_54370 disconnect, remove instances and subscribers
+
+2025-04-10 11:31:30,269 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=3}, 1744255632554_172.18.0.7_48852
+
+2025-04-10 11:31:30,333 INFO Client connection 1744255632554_172.18.0.7_48852 disconnect, remove instances and subscribers
+
+2025-04-10 11:31:31,216 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-10 11:31:31,243 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-10 11:31:31,531 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-10 16:47:49,436 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-10 16:47:49,436 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-10 16:47:49,437 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-10 16:47:49,437 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-10 16:47:49,943 INFO Load instance extension handler []
+
+2025-04-10 16:58:41,952 INFO Client connection 1744275521716_172.18.0.3_57704 connect
+
+2025-04-10 16:58:42,021 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=0}, 1744275521716_172.18.0.3_57704
+
+2025-04-10 17:08:43,956 INFO Client connection 1744276123838_172.18.0.4_50406 connect
+
+2025-04-10 17:08:44,072 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744276123838_172.18.0.4_50406
+
+2025-04-10 17:08:44,479 INFO Client connection 1744276124374_172.18.0.5_40702 connect
+
+2025-04-10 17:08:44,599 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=0}, 1744276124374_172.18.0.5_40702
+
+2025-04-10 17:08:45,976 INFO Client connection 1744276125896_172.18.0.6_48418 connect
+
+2025-04-10 17:08:46,094 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744276125896_172.18.0.6_48418
+
+2025-04-10 17:47:02,214 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744276125896_172.18.0.6_48418
+
+2025-04-10 17:47:02,259 INFO Client connection 1744276125896_172.18.0.6_48418 disconnect, remove instances and subscribers
+
+2025-04-10 17:47:05,069 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, 1744275521716_172.18.0.3_57704
+
+2025-04-10 17:47:05,077 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, 1744276124374_172.18.0.5_40702
+
+2025-04-10 17:47:05,106 INFO Client connection 1744275521716_172.18.0.3_57704 disconnect, remove instances and subscribers
+
+2025-04-10 17:47:05,109 INFO Client connection 1744276124374_172.18.0.5_40702 disconnect, remove instances and subscribers
+
+2025-04-10 17:47:06,548 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744276123838_172.18.0.4_50406
+
+2025-04-10 17:47:06,591 INFO Client connection 1744276123838_172.18.0.4_50406 disconnect, remove instances and subscribers
+
+2025-04-10 17:47:07,501 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-10 17:47:07,526 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-10 17:48:51,327 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-10 17:48:51,327 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-10 17:48:51,328 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-10 17:48:51,328 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-10 17:48:51,982 INFO Load instance extension handler []
+
+2025-04-10 17:49:05,912 INFO Client connection 1744278545710_172.18.0.3_50588 connect
+
+2025-04-10 17:49:06,011 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=0}, 1744278545710_172.18.0.3_50588
+
+2025-04-10 17:49:09,512 INFO Client connection 1744278549427_172.18.0.4_54468 connect
+
+2025-04-10 17:49:09,627 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744278549427_172.18.0.4_54468
+
+2025-04-10 17:49:13,750 INFO Client connection 1744278553669_172.18.0.5_55478 connect
+
+2025-04-10 17:49:13,861 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=0}, 1744278553669_172.18.0.5_55478
+
+2025-04-10 17:49:16,705 INFO Client connection 1744278556633_172.18.0.6_34284 connect
+
+2025-04-10 17:49:16,817 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744278556633_172.18.0.6_34284
+
+2025-04-10 18:26:42,762 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, 1744278545710_172.18.0.3_50588
+
+2025-04-10 18:26:42,918 INFO Client connection 1744278545710_172.18.0.3_50588 disconnect, remove instances and subscribers
+
+2025-04-10 18:26:44,941 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744278549427_172.18.0.4_54468
+
+2025-04-10 18:26:44,967 INFO Client connection 1744278549427_172.18.0.4_54468 disconnect, remove instances and subscribers
+
+2025-04-10 18:26:46,602 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, 1744278553669_172.18.0.5_55478
+
+2025-04-10 18:26:46,779 INFO Client connection 1744278553669_172.18.0.5_55478 disconnect, remove instances and subscribers
+
+2025-04-10 18:26:48,300 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744278556633_172.18.0.6_34284
+
+2025-04-10 18:26:48,447 INFO Client connection 1744278556633_172.18.0.6_34284 disconnect, remove instances and subscribers
+
+2025-04-10 18:28:21,405 WARN namespace : public, [DEFAULT_GROUP@@BQ-question] services are automatically cleaned
+
+2025-04-10 18:28:21,406 WARN namespace : public, [DEFAULT_GROUP@@BQ-user] services are automatically cleaned
+
+2025-04-10 18:28:21,406 WARN namespace : public, [DEFAULT_GROUP@@BQ-gateway] services are automatically cleaned
+
+2025-04-10 18:28:21,406 WARN namespace : public, [DEFAULT_GROUP@@BQ-file] services are automatically cleaned
+
+2025-04-10 19:16:53,723 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-10 19:16:53,784 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-10 19:16:54,413 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-10 19:44:17,431 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-10 19:44:17,431 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-10 19:44:17,432 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-10 19:44:17,432 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-10 19:44:17,959 INFO Load instance extension handler []
+
+2025-04-10 19:44:44,161 INFO Client connection 1744285484012_172.18.0.3_50468 connect
+
+2025-04-10 19:44:44,261 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=0}, 1744285484012_172.18.0.3_50468
+
+2025-04-10 19:44:53,750 INFO Client connection 1744285493666_172.18.0.4_39200 connect
+
+2025-04-10 19:44:53,862 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744285493666_172.18.0.4_39200
+
+2025-04-10 19:44:59,316 INFO Client connection 1744285499217_172.18.0.5_48982 connect
+
+2025-04-10 19:44:59,429 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=0}, 1744285499217_172.18.0.5_48982
+
+2025-04-10 19:45:03,464 INFO Client connection 1744285503388_172.18.0.6_37036 connect
+
+2025-04-10 19:45:03,575 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744285503388_172.18.0.6_37036
+
+2025-04-10 20:29:29,520 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744285493666_172.18.0.4_39200
+
+2025-04-10 20:29:29,613 INFO Client connection 1744285493666_172.18.0.4_39200 disconnect, remove instances and subscribers
+
+2025-04-10 20:29:32,680 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, 1744285499217_172.18.0.5_48982
+
+2025-04-10 20:29:32,716 INFO Client connection 1744285499217_172.18.0.5_48982 disconnect, remove instances and subscribers
+
+2025-04-10 20:29:32,728 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, 1744285484012_172.18.0.3_50468
+
+2025-04-10 20:29:32,783 INFO Client connection 1744285484012_172.18.0.3_50468 disconnect, remove instances and subscribers
+
+2025-04-10 20:29:34,212 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744285503388_172.18.0.6_37036
+
+2025-04-10 20:29:34,241 INFO Client connection 1744285503388_172.18.0.6_37036 disconnect, remove instances and subscribers
+
+2025-04-10 20:29:35,374 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-10 20:29:35,415 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+

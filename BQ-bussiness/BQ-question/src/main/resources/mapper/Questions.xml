@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.QuestionMapper">
+    <resultMap id="QuestionMap" type="entity.Questions">
+        <id property="questionId" column="question_id"/>
+        <result property="questionType" column="question_type"/>
+        <result property="questionText" column="question_text"/>
+        <result property="options" column="options"/>
+        <result property="answer" column="answer"/>
+        <result property="difficulty" column="difficulty"/>
+        <result property="knowledgePoint" column="knowledge_point"/>
+        <result property="fileId" column="file_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <select id="selectByUserId" resultMap="QuestionMap">
+        SELECT * FROM questions WHERE user_id = #{userId}
+    </select>
+
+    <select id="selectByFileIdAndUserId" resultMap="QuestionMap">
+        SELECT * FROM questions WHERE file_id = #{fileId} AND user_id = #{userId}
+    </select>
+
+    <insert id="insert" parameterType="entity.Questions" useGeneratedKeys="true" keyProperty="questionId">
+        INSERT INTO questions (
+            question_type, question_text, options, answer, difficulty,
+            knowledge_point, file_id, user_id, create_time, update_time
+        ) VALUES (
+                     #{questionType}, #{questionText}, #{options}, #{answer}, #{difficulty},
+                     #{knowledgePoint}, #{fileId}, #{userId}, #{createTime}, #{updateTime}
+                 )
+    </insert>
+</mapper>

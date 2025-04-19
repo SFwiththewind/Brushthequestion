@@ -1,0 +1,22 @@
+2025-04-08 15:05:53,304 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}
+
+2025-04-08 15:05:53,738 INFO [PUSH-SUCC] 44ms, all delay time 607ms, SLA 608ms, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=172.18.0.7
+
+2025-04-08 15:05:53,899 INFO [PUSH-SUCC] 5ms, all delay time 588ms for subscriber 172.18.0.7, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2025-04-08 15:47:38,125 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}
+
+2025-04-08 15:47:38,439 INFO [PUSH-SUCC] 165ms, all delay time 681ms, SLA 686ms, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=172.18.0.4
+
+2025-04-08 15:49:39,333 INFO [PUSH-SUCC] 20ms, all delay time 607ms for subscriber 172.18.0.4, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2025-04-08 16:04:14,953 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}
+
+2025-04-08 16:04:15,425 INFO [PUSH-SUCC] 73ms, all delay time 674ms, SLA 677ms, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=172.18.0.4
+
+2025-04-08 16:04:45,741 INFO [PUSH-SUCC] 8ms, all delay time 516ms for subscriber 172.18.0.4, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2025-04-08 16:04:45,746 INFO [PUSH-SUCC] 13ms, all delay time 521ms for subscriber 172.18.0.4, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2025-04-08 16:05:15,830 INFO [PUSH-SUCC] 24ms, all delay time 578ms for subscriber 172.18.0.4, Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+

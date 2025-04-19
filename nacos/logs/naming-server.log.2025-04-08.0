@@ -1,0 +1,267 @@
+2025-04-08 14:50:35,277 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 14:50:35,277 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 14:50:35,279 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 14:50:35,279 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 14:50:36,132 INFO Load instance extension handler []
+
+2025-04-08 14:59:19,809 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 14:59:19,863 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 14:59:40,904 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 14:59:40,905 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 14:59:40,906 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 14:59:40,906 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 14:59:41,953 INFO Load instance extension handler []
+
+2025-04-08 15:03:25,923 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:03:25,956 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:04:17,407 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:04:17,407 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:04:17,409 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:04:17,409 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:04:18,507 INFO Load instance extension handler []
+
+2025-04-08 15:04:21,463 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:04:21,516 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:04:21,879 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-08 15:05:39,530 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:05:39,531 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:05:39,532 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:05:39,532 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:05:40,745 INFO Load instance extension handler []
+
+2025-04-08 15:05:47,668 INFO Client connection 1744095947235_172.18.0.4_47284 connect
+
+2025-04-08 15:05:47,762 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744095947235_172.18.0.4_47284
+
+2025-04-08 15:05:53,007 INFO Client connection 1744095952865_172.18.0.7_55062 connect
+
+2025-04-08 15:05:53,130 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744095952865_172.18.0.7_55062
+
+2025-04-08 15:30:26,822 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744095952865_172.18.0.7_55062
+
+2025-04-08 15:30:26,898 INFO Client connection 1744095952865_172.18.0.7_55062 disconnect, remove instances and subscribers
+
+2025-04-08 15:30:29,998 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744095947235_172.18.0.4_47284
+
+2025-04-08 15:30:30,070 INFO Client connection 1744095947235_172.18.0.4_47284 disconnect, remove instances and subscribers
+
+2025-04-08 15:30:31,164 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:30:31,238 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:30:31,872 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-08 15:33:24,837 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:33:24,837 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:33:24,838 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:33:24,838 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:33:25,545 INFO Load instance extension handler []
+
+2025-04-08 15:33:41,688 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:33:41,712 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:34:31,264 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:34:31,264 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:34:31,265 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:34:31,266 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:34:32,340 INFO Load instance extension handler []
+
+2025-04-08 15:34:55,090 INFO Client connection 1744097694756_172.18.0.4_57072 connect
+
+2025-04-08 15:34:55,263 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744097694756_172.18.0.4_57072
+
+2025-04-08 15:37:04,426 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744097694756_172.18.0.4_57072
+
+2025-04-08 15:37:04,458 INFO Client connection 1744097694756_172.18.0.4_57072 disconnect, remove instances and subscribers
+
+2025-04-08 15:37:05,407 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:37:05,430 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:39:28,993 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:39:28,993 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:39:28,998 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:39:28,998 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:39:30,053 INFO Load instance extension handler []
+
+2025-04-08 15:41:00,487 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:41:00,575 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:41:01,195 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-08 15:41:55,668 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 15:41:55,668 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 15:41:55,673 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 15:41:55,674 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 15:41:56,658 INFO Load instance extension handler []
+
+2025-04-08 15:47:37,471 INFO Client connection 1744098456854_172.18.0.4_57596 connect
+
+2025-04-08 15:47:37,564 INFO Client connection 1744098457526_172.18.0.4_57608 connect
+
+2025-04-08 15:47:37,703 INFO Client connection 1744098456854_172.18.0.4_57596 disconnect, remove instances and subscribers
+
+2025-04-08 15:47:37,752 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744098457526_172.18.0.4_57608
+
+2025-04-08 15:49:34,100 INFO Client connection 1744098574000_172.18.0.5_51254 connect
+
+2025-04-08 15:49:34,215 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744098574000_172.18.0.5_51254
+
+2025-04-08 15:56:51,378 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744098457526_172.18.0.4_57608
+
+2025-04-08 15:56:51,435 INFO Client connection 1744098457526_172.18.0.4_57608 disconnect, remove instances and subscribers
+
+2025-04-08 15:56:54,229 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744098574000_172.18.0.5_51254
+
+2025-04-08 15:56:54,267 INFO Client connection 1744098574000_172.18.0.5_51254 disconnect, remove instances and subscribers
+
+2025-04-08 15:56:55,245 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 15:56:55,337 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 15:56:55,974 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-04-08 16:03:57,682 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2025-04-08 16:03:57,683 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2025-04-08 16:03:57,684 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2025-04-08 16:03:57,684 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2025-04-08 16:03:58,888 INFO Load instance extension handler []
+
+2025-04-08 16:04:14,644 INFO Client connection 1744099454342_172.18.0.4_46584 connect
+
+2025-04-08 16:04:14,747 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=0}, 1744099454342_172.18.0.4_46584
+
+2025-04-08 16:04:27,319 INFO Client connection 1744099467137_172.18.0.5_59016 connect
+
+2025-04-08 16:04:27,442 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=0}, 1744099467137_172.18.0.5_59016
+
+2025-04-08 16:04:39,798 INFO Client connection 1744099479576_172.18.0.6_40888 connect
+
+2025-04-08 16:04:39,922 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=0}, 1744099479576_172.18.0.6_40888
+
+2025-04-08 16:04:58,032 INFO Client connection 1744099497910_172.18.0.7_56886 connect
+
+2025-04-08 16:04:58,149 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=0}, 1744099497910_172.18.0.7_56886
+
+2025-04-08 21:39:49,144 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-gateway', ephemeral=true, revision=1}, 1744099454342_172.18.0.4_46584
+
+2025-04-08 21:39:49,237 INFO Client connection 1744099454342_172.18.0.4_46584 disconnect, remove instances and subscribers
+
+2025-04-08 21:39:52,466 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-file', ephemeral=true, revision=1}, 1744099479576_172.18.0.6_40888
+
+2025-04-08 21:39:52,527 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-question', ephemeral=true, revision=1}, 1744099497910_172.18.0.7_56886
+
+2025-04-08 21:39:52,536 INFO Client connection 1744099479576_172.18.0.6_40888 disconnect, remove instances and subscribers
+
+2025-04-08 21:39:52,614 INFO Client connection 1744099497910_172.18.0.7_56886 disconnect, remove instances and subscribers
+
+2025-04-08 21:39:54,107 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='BQ-user', ephemeral=true, revision=1}, 1744099467137_172.18.0.5_59016
+
+2025-04-08 21:39:54,149 INFO Client connection 1744099467137_172.18.0.5_59016 disconnect, remove instances and subscribers
+
+2025-04-08 21:39:55,179 INFO [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2025-04-08 21:39:55,206 INFO [NamingServerHttpClientManager] Completed destruction of HTTP-Client
+
+2025-04-08 21:39:55,495 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)

@@ -1,0 +1,118 @@
+2025-04-10 09:23:06,253 INFO use local db service for init
+
+2025-04-10 09:23:07,127 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2025-04-10 09:23:07,130 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2025-04-10 09:23:07,212 WARN Table/View 'CONFIG_INFO' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,286 WARN Table/View 'HIS_CONFIG_INFO' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,335 WARN Table/View 'CONFIG_INFO_BETA' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,361 WARN Table/View 'CONFIG_INFO_TAG' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,387 WARN Table/View 'CONFIG_INFO_GRAY' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,422 WARN Table/View 'APP_LIST' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,443 WARN Table/View 'APP_CONFIGDATA_RELATION_SUBS' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,466 WARN Table/View 'APP_CONFIGDATA_RELATION_PUBS' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,490 WARN Table/View 'CONFIG_TAGS_RELATION' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,524 WARN Table/View 'GROUP_CAPACITY' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,548 WARN Table/View 'TENANT_CAPACITY' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,572 WARN Table/View 'TENANT_INFO' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,602 WARN Table/View 'USERS' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,624 WARN Table/View 'ROLES' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,644 WARN Table/View 'PERMISSIONS' already exists in Schema 'NACOS'.
+
+2025-04-10 09:23:07,654 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_TAG"'.
+
+2025-04-10 09:23:07,659 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 09:23:07,663 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO"'.
+
+2025-04-10 09:23:07,666 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_BETA"'.
+
+2025-04-10 09:23:07,668 WARN Column 'PUBLISH_TYPE' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 09:23:07,670 WARN Column 'EXT_INFO' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 09:23:07,672 WARN Column 'GRAY_NAME' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 09:23:07,673 INFO use StandaloneDatabaseOperateImpl
+
+2025-04-10 16:47:46,189 INFO use local db service for init
+
+2025-04-10 16:47:47,271 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2025-04-10 16:47:47,274 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2025-04-10 16:47:48,034 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_TAG"'.
+
+2025-04-10 16:47:48,036 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 16:47:48,038 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO"'.
+
+2025-04-10 16:47:48,039 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_BETA"'.
+
+2025-04-10 16:47:48,041 WARN Column 'PUBLISH_TYPE' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 16:47:48,042 WARN Column 'EXT_INFO' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 16:47:48,044 WARN Column 'GRAY_NAME' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 16:47:48,044 INFO use StandaloneDatabaseOperateImpl
+
+2025-04-10 17:48:48,024 INFO use local db service for init
+
+2025-04-10 17:48:49,152 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2025-04-10 17:48:49,155 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2025-04-10 17:48:49,965 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_TAG"'.
+
+2025-04-10 17:48:49,967 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 17:48:49,970 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO"'.
+
+2025-04-10 17:48:49,972 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_BETA"'.
+
+2025-04-10 17:48:49,973 WARN Column 'PUBLISH_TYPE' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 17:48:49,975 WARN Column 'EXT_INFO' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 17:48:49,976 WARN Column 'GRAY_NAME' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 17:48:49,977 INFO use StandaloneDatabaseOperateImpl
+
+2025-04-10 19:44:13,870 INFO use local db service for init
+
+2025-04-10 19:44:15,111 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2025-04-10 19:44:15,114 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2025-04-10 19:44:15,922 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_TAG"'.
+
+2025-04-10 19:44:15,925 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 19:44:15,926 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO"'.
+
+2025-04-10 19:44:15,928 WARN Column 'SRC_IP' already exists in Table/View '"NACOS"."CONFIG_INFO_BETA"'.
+
+2025-04-10 19:44:15,929 WARN Column 'PUBLISH_TYPE' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 19:44:15,931 WARN Column 'EXT_INFO' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 19:44:15,932 WARN Column 'GRAY_NAME' already exists in Table/View '"NACOS"."HIS_CONFIG_INFO"'.
+
+2025-04-10 19:44:15,932 INFO use StandaloneDatabaseOperateImpl
+
