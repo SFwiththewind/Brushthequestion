@@ -80,6 +80,7 @@ public class WeChatAuthServiceImpl implements WeChatAuthService {
             user.setUserUpdate(now);
             user.setSessionKey(sessionKey);
             user.setSessionkeyexpiretime(now.plusDays(2));
+            user.setUserStart(0);
             userMapper.insert(user);
         } else {
             user.setUserGender(userInfo.getGender().toString());
